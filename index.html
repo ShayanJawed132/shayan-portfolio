@@ -2,263 +2,602 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shayan Jawed — WordPress &amp; Frontend Developer</title>
+    <meta name="description"
+        content="Shayan Jawed — WordPress Developer &amp; Frontend Developer. HTML, CSS, JavaScript, WordPress, Elementor." />
 
-    <title>ENT Care Clinic | Project Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="logo">Port<span>folio</span></a>
 
-    <section class="project-hero">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
 
-        <div class="container">
+            <a href="#contact" class="btn btn-primary nav-cta">Hire Me</a>
 
-            <a href="../index.html#Portfolio" class="back-btn">
-                <i class="fa-solid fa-arrow-left"></i>
-                Back to Portfolio
-            </a>
-
-            <span class="project-category">
-                WordPress Project
-            </span>
-
-            <h1>
-                ENT Care Clinic
-            </h1>
-
-            <p class="project-subtitle">
-
-                A modern and responsive clinic website built using
-                WordPress & Elementor for a healthcare business.
-
-            </p>
-
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
+    </nav>
 
-    </section>
+    <main>
 
+        <!-- ===================== HERO ===================== -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text fade-in">
+                    <p class="hero-hi">Hi, I'm</p>
+                    <h1>Shayan Jawed</h1>
+                    <h2 class="hero-title">WordPress Developer / Frontend Developer</h2>
+                    <p class="hero-intro">I build clean, modern, and user-friendly websites using WordPress,
+                        Elementor, HTML, CSS and JavaScript — with a growing focus on WooCommerce, SEO and
+                        responsive development for real client projects.</p>
+                    <div class="tag-row">
+                        <span>WordPress</span>
+                        <span>Elementor</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="btn-row">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
 
-    <!-- ================= HERO IMAGE ================= -->
+                <div class="hero-image fade-in">
+                    <div class="hero-photo-ring">
+                        <img src="shayan (1).png" alt="Shayan Jawed" />
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="project-image">
+        <!-- ===================== ABOUT ===================== -->
+        <section id="about" class="section">
+            <div class="container">
+                <p class="eyebrow fade-in">About Me</p>
+                <h2 class="heading fade-in">Get to know me</h2>
 
-        <div class="container">
+                <div class="about-grid">
+                    <div class="about-card fade-in">
+                        <div class="about-avatar">S</div>
+                        <div class="about-facts">
+                            <div><span>Role</span><strong>WordPress Developer</strong></div>
+                            <div><span>Location</span><strong>Karachi, Pakistan</strong></div>
+                            <div><span>Focus</span><strong>WordPress &amp; Elementor</strong></div>
+                            <div><span>Status</span><strong>Open to work</strong></div>
+                        </div>
+                    </div>
 
-            <img src="../jame's clinic.png" alt="ENT Care Clinic Homepage">
+                    <div class="about-text fade-in">
+                        <p>I'm <strong>Shayan Jawed</strong>, a WordPress Developer who enjoys building clean,
+                            modern, and user-friendly web experiences. I work with WordPress, Elementor, HTML,
+                            CSS and JavaScript to bring ideas to life — websites that look great and perform
+                            well on every device.</p>
+                        <p>Alongside client-style WordPress builds, I practice frontend fundamentals through
+                            hands-on HTML, CSS and JavaScript projects. This keeps my core web skills sharp
+                            while I grow as a WordPress developer.</p>
+                        <p>I'm currently expanding my knowledge of <strong>WooCommerce, SEO, and responsive web
+                                development</strong>, with the goal of delivering complete, reliable solutions for
+                            small businesses and clients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </div>
+        <!-- ===================== SKILLS ===================== -->
+        <section id="skills" class="section alt-bg">
+            <div class="container">
+                <p class="eyebrow fade-in">Skills</p>
+                <h2 class="heading fade-in">Tools &amp; Technologies</h2>
 
-    </section>
+                <div class="skills-grid fade-in">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-wordpress"></i>
+                        <h4>WordPress</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h4>Elementor</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-html5"></i>
+                        <h4>HTML5</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h4>CSS3</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-js"></i>
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h4>Responsive Design</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <h4>Git</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-github"></i>
+                        <h4>GitHub</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <h4>Basic SEO</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- ===================== PROJECTS ===================== -->
+        <section id="projects" class="section">
+            <div class="container">
+                <p class="eyebrow fade-in">Projects</p>
+                <h2 class="heading fade-in">Recent Work</h2>
 
+                <!-- WordPress Projects -->
+                <h3 class="sub-heading fade-in">WordPress Projects</h3>
+                <div class="project-grid fade-in">
 
-    <!-- ================= OVERVIEW ================= -->
+                    <article class="project-card">
+                        <div class="thumb">
+                            <img src="gym wesbite by wp.png" alt="Gym Website" class="thumb-img">
 
-    <section class="project-section">
+                        </div>
+                        <div class="card-body">
+                            <h4>ENT Care Clinic</h4>
+                            <p>Modern responsive clinic website with an appointment section and clean UI.</p>
+                            <div class="badge-row">
+                                <span><i class="fa-brands fa-wordpress"></i>WordPress</span><span><i
+                                        class="fa-solid fa-layer-group"></i>Elementor</span>
+                            </div>
+                            <div class="card-actions">
+                                <a target="_blank"
+                                    href="preview.html?img=gym%20wesbite%20by%20wp.png&title=Gym%20Website"
+                                    class="btn btn-primary btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-        <div class="container">
+                    <article class="project-card">
+                        <div class="thumb thumb-2">
+                            <span class="category-badge">WordPress</span>
+                            <span class="thumb-caption">Website Screenshot</span>
+                        </div>
+                        <div class="card-body">
+                            <h4>Doctor Clinic Website</h4>
+                            <p>Multi-page medical practice website with services and doctor profiles.</p>
+                            <div class="badge-row">
+                                <span><i class="fa-brands fa-wordpress"></i>WordPress</span><span><i
+                                        class="fa-solid fa-layer-group"></i>Elementor</span>
+                            </div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?title=Doctor%20Clinic%20Website"
+                                    class="btn btn-primary btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-            <h2>
-                Project Overview
-            </h2>
+                    <article class="project-card">
+                        <div class="thumb thumb-3">
+                            <span class="category-badge">WordPress</span>
+                            <span class="thumb-caption">Website Screenshot</span>
+                        </div>
+                        <div class="card-body">
+                            <h4>Business Landing Page</h4>
+                            <p>Single-page WordPress site built for lead generation with fast load times.</p>
+                            <div class="badge-row">
+                                <span><i class="fa-brands fa-wordpress"></i>WordPress</span><span><i
+                                        class="fa-solid fa-layer-group"></i>Elementor</span>
+                            </div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?title=Business%20Landing%20Page"
+                                    class="btn btn-primary btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-            <p>
+                    <article class="project-card">
+                        <div class="thumb thumb-4">
+                            <span class="category-badge">WordPress</span>
+                            <span class="thumb-caption">Website Screenshot</span>
+                        </div>
+                        <div class="card-body">
+                            <h4>Restaurant Website</h4>
+                            <p>Menu-focused restaurant site with online reservation section.</p>
+                            <div class="badge-row">
+                                <span><i class="fa-brands fa-wordpress"></i>WordPress</span><span><i
+                                        class="fa-solid fa-layer-group"></i>Elementor</span>
+                            </div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?title=Restaurant%20Website"
+                                    class="btn btn-primary btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-                ENT Care Clinic is a professional healthcare website
-                designed to establish trust, provide essential clinic
-                information, and encourage appointment bookings.
+                    <article class="project-card">
+                        <div class="thumb thumb-1">
+                            <span class="category-badge">WordPress</span>
+                            <span class="thumb-caption">Website Screenshot</span>
+                        </div>
+                        <div class="card-body">
+                            <h4>Portfolio Website (WordPress)</h4>
+                            <p>Personal portfolio template built and styled fully inside WordPress.</p>
+                            <div class="badge-row">
+                                <span><i class="fa-brands fa-wordpress"></i>WordPress</span><span><i
+                                        class="fa-solid fa-layer-group"></i>Elementor</span>
+                            </div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?title=Portfolio%20Website%20%28WordPress%29"
+                                    class="btn btn-primary btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </article>
 
-                The website focuses on clean UI, responsive layouts,
-                and an intuitive user experience.
+                    <article class="project-card">
+                        <div class="thumb thumb-2">
+                            <span class="category-badge">WordPress</span>
+                            <span class="thumb-caption">Website Screenshot</span>
+                        </div>
+                        <div class="card-body">
+                            <h4>Ecommerce Website</h4>
+                            <p>Product catalog and checkout flow built with WordPress and WooCommerce.</p>
+                            <div class="badge-row">
+                                <span><i class="fa-brands fa-wordpress"></i>WordPress</span><span><i
+                                        class="fa-solid fa-cart-shopping"></i>WooCommerce</span>
+                            </div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?title=Ecommerce%20Website"
+                                    class="btn btn-primary btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-            </p>
+                </div>
+                <p class="grid-note fade-in">* WordPress cards above are placeholders where noted — swap in your real
+                    screenshots and links anytime.</p>
 
-        </div>
+                <!-- HTML / CSS / JavaScript Projects -->
+                <h3 class="sub-heading fade-in">HTML, CSS &amp; JavaScript Projects</h3>
+                <div class="project-grid fade-in">
 
-    </section>
+                    <article class="project-card">
+                        <div class="thumb thumb-3">
+                            <img src="paypalClone.png" alt="Paypal CLone Website" class="thumb-img">
+                        </div>
+                        <div class="card-body">
+                            <h4>Paypal Clone Website</h4>
+                            <p>A PayPal Clone Website built using HTML and CSS, replicating the original website's
+                                layout and design.</p>
+                            <div class="badge-row"><span><i class="fa-brands fa-html5"></i>HTML</span><span><i
+                                        class="fa-brands fa-css3-alt"></i>CSS</span></div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?img=paypalClone.png&title=PayPal%20Clone"
+                                    class="btn btn-primary btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </article>
 
+                    <article class="project-card">
+                        <div class="thumb thumb-4">
+                            <img src="foodPage.png" alt="Food Page" class="thumb-img">
+                        </div>
+                        <div class="card-body">
+                            <h4>Food Secret</h4>
+                            <p>A responsive hero section built using HTML and CSS with a clean layout, modern
+                                typography, and attractive design.</p>
+                            <div class="badge-row"><span><i class="fa-brands fa-html5"></i>HTML</span><span><i
+                                        class="fa-brands fa-css3-alt"></i>CSS</span></div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?img=foodPage.png&title=Food%20Page"
+                                    class="btn btn-primary btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </article>
 
+                    <article class="project-card">
+                        <div class="thumb thumb-1">
+                            <img src="bombaatTravel.png" alt="Hero Section Travel Agency" class="thumb-img">
+                        </div>
+                        <div class="card-body">
+                            <h4>Bombaat Travel</h4>
+                            <p>A responsive travel landing page built using HTML and CSS with a modern layout,
+                                clean design, and visually engaging sections.
+                            </p>
+                            <div class="badge-row"><span><i class="fa-brands fa-html5"></i>HTML</span><span><i
+                                        class="fa-brands fa-css3-alt"></i>CSS</span></div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?img=bombaatTravel.png&title=Bombaat%20Travel"
+                                    class="btn btn-primary btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </article>
 
-    <!-- ================= TECH STACK ================= -->
+                    <article class="project-card">
+                        <div class="thumb thumb-2">
+                            <img src="buildagency.png" alt="Hero Section Agency Website" class="thumb-img">
+                        </div>
+                        <div class="card-body">
+                            <h4>Real Estate Home Page</h4>
+                            <p>Real estate listing site built with a focus on speed and simplicity.</p>
+                            <div class="badge-row"><span><i class="fa-brands fa-html5"></i>HTML</span><span><i
+                                        class="fa-brands fa-css3-alt"></i>CSS</span></div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?img=buildagency.png&title=Build%20Agency"
+                                    class="btn btn-primary btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </article>
 
-    <section class="project-section">
+                    <article class="project-card">
+                        <div class="thumb thumb-3">
+                            <img src="calculator.png" alt="Calculator" class="thumb-img">
+                        </div>
+                        <div class="card-body">
+                            <h4>Calcultor</h4>
+                            <p>Calculator
 
-        <div class="container">
+                                A responsive calculator built using HTML, CSS, and JavaScript that performs basic
+                                arithmetic operations with a clean and user-friendly interface.
+                            </p>
+                            <div class="badge-row"><span><i class="fa-brands fa-html5"></i>HTML</span><span><i
+                                        class="fa-brands fa-css3-alt"></i>CSS</span></div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?img=calculator.png&title=Calculator"
+                                    class="btn btn-primary btn-sm">View Project</a>
+                                <a target="_blank" href="https://shayan-simple-values-calculator.netlify.app/"
+                                    class="btn btn-primary btn-sm">Live Demo</a>
 
-            <h2>
+                            </div>
+                        </div>
+                    </article>
 
-                Tech Stack
+                    <article class="project-card">
+                        <div class="thumb thumb-4">
+                            <img src="movieapp.png" alt="Movie App" class="thumb-img">
+                        </div>
+                        <div class="card-body">
+                            <h4>Movie App</h4>
+                            <p>A React-based movie search application that fetches real-time movie data using an API. It
+                                demonstrates API integration, state management, and dynamic rendering with React.</p>
+                            <div class="badge-row"><span>React</span><span>API</span></div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?img=movieapp.png&title=Movie%20App"
+                                    class="btn btn-primary btn-sm">View Project</a>
+                                <a target="_blank" href="https://movie-app-shayan-jawed.netlify.app/"
+                                    class="btn btn-primary btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-            </h2>
+                    <article class="project-card">
+                        <div class="thumb thumb-1">
+                            <img src="chessboard.png" alt="Chess Board" class="thumb-img">
+                        </div>
+                        <div class="card-body">
+                            <h4>Chess Board Design</h4>
+                            <p>A chessboard layout created using HTML and CSS, showcasing CSS Grid, precise alignment,
+                                and clean styling.</p>
+                            <div class="badge-row"><span><i class="fa-brands fa-html5"></i>HTML</span><span><i
+                                        class="fa-brands fa-css3-alt"></i>CSS</span></div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?img=chessboard.png&title=Chess%20Board"
+                                    class="btn btn-primary btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </article>
 
-            <div class="tech-stack">
+                    <article class="project-card">
+                        <div class="thumb thumb-2">
+                            <img src="palindrom.png" alt="Palindrom Checker" class="thumb-img">
+                        </div>
+                        <div class="card-body">
+                            <h4>Plaindrom Checker</h4>
+                            <p>A palindrome checker built using HTML, CSS, and JavaScript that verifies whether a word
+                                or phrase reads the same forwards and backwards.</p>
+                            <div class="badge-row"><span><i class="fa-brands fa-html5"></i>HTML</span><span><i
+                                        class="fa-brands fa-css3-alt"></i>CSS</span><span><i
+                                        class="fa-brands fa-js"></i>JavaScript</span></div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?img=palindrom.png&title=Palindrome%20Checker"
+                                    class="btn btn-primary btn-sm">View Project</a>
+                                <a target="_blank" href="https://shayan-palindrome-checker.netlify.app/"
+                                    class="btn btn-primary btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-                <span>WordPress</span>
+                    <article class="project-card">
+                        <div class="thumb thumb-3">
+                            <img src="gymheropage.png" alt="Gym Website" class="thumb-img">
+                        </div>
+                        <div class="card-body">
+                            <h4>Gym Login Form </h4>
+                            <p>A modern gym login form built using HTML and CSS with a clean layout, stylish design, and
+                                user-friendly interface.</p>
+                            <div class="badge-row"><span><i class="fa-brands fa-html5"></i>HTML</span><span><i
+                                        class="fa-brands fa-css3-alt"></i>CSS</div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?img=gymheropage.png&title=Gym%20Hero%20Page"
+                                    class="btn btn-primary btn-sm">View Project </a>
+                            </div>
+                        </div>
+                    </article>
 
-                <span>Elementor</span>
+                    <article class="project-card">
+                        <div class="thumb thumb-4">
+                            <img src="100dayschallenge.png" alt="100 days Challenge" class="thumb-img">
+                        </div>
+                        <div class="card-body">
+                            <h4>100 Days Challenge</h4>
+                            <p>A modern UI design created using HTML and CSS, featuring a clean layout and visually
+                                appealing styling.
+                            </p>
+                            <div class="badge-row"><span><i class="fa-brands fa-html5"></i>HTML</span><span><i
+                                        class="fa-brands fa-css3-alt"></i>CSS</div>
+                            <div class="card-actions">
+                                <a target="_blank"
+                                    href="preview.html?img=100dayschallenge.png&title=100%20Days%20Challenge"
+                                    class="btn btn-primary btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </article>
 
-                <span>Responsive Design</span>
+                    <article class="project-card">
+                        <div class="thumb thumb-1">
+                            <img src="customerfeedbackform.png" alt="Customer Feedback Form screenshot"
+                                class="thumb-img">
+                        </div>
+                        <div class="card-body">
+                            <h4>Customer FeedBack Form</h4>
+                            <p>A clean and user-friendly feedback form built using HTML and CSS with a structured layout
+                                and modern styling.</p>
+                            <div class="badge-row"><span><i class="fa-brands fa-html5"></i>HTML</span><span><i
+                                        class="fa-brands fa-css3-alt"></i>CSS</span><span><i
+                                        class="fa-brands fa-js"></i>JavaScript</span></div>
+                            <div class="card-actions">
+                                <a target="_blank"
+                                    href="preview.html?img=customerfeedbackform.png&title=Customer%20Feedback%20Form"
+                                    class="btn btn-primary btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </article>
 
-                <span>Contact Form 7</span>
+                    <article class="project-card">
+                        <div class="thumb thumb-2">
+                            <img src="loginform.png" alt="Login Form screenshot" class="thumb-img">
+                        </div>
+                        <div class="card-body">
+                            <h4>Login Form </h4>
+                            <p>A clean and responsive login form built using HTML and CSS with a modern layout and
+                                user-friendly design.</p>
+                            <div class="badge-row"><span><i class="fa-brands fa-html5"></i>HTML</span><span><i
+                                        class="fa-brands fa-css3-alt"></i>CSS</span><span><i
+                                        class="fa-brands fa-js"></i>JavaScript</span></div>
+                            <div class="card-actions">
+                                <a target="_blank" href="preview.html?img=loginform.png&title=Login%20Form"
+                                    class="btn btn-primary btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </article>
 
-                <span>Basic SEO</span>
+                </div>
+                <p class="grid-note fade-in">* Thumbnails are placeholders — swap in your real screenshots or preview
+                    clips anytime.</p>
+            </div>
+        </section>
 
+        <!-- ===================== CONTACT ===================== -->
+        <section id="contact" class="section alt-bg">
+            <div class="container">
+                <p class="eyebrow fade-in">Contact</p>
+                <h2 class="heading fade-in">Let's Work Together</h2>
+
+                <div class="contact-grid fade-in">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Phone</span>
+                        <a href="tel:03422069413">0342 2069413</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email</span>
+                        <a href="mailto:jawedshayan124@gmail.com">jawedshayan124@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Location</span>
+                        <a>Karachi, Pakistan</a>
+                    </div>
+                </div>
+
+                <div class="social-btn-row fade-in">
+                    <a href="https://www.linkedin.com/in/shayan-jawed-3a9671381/" target="_blank"
+                        class="btn btn-outline btn-sm"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/ShayanJawed132/student-shayan" target="_blank"
+                        class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://www.facebook.com/shayan.jawed.940" target="_blank"
+                        class="btn btn-outline btn-sm"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href="https://www.instagram.com/shayooonnnieee/" target="_blank"
+                        class="btn btn-outline btn-sm"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo">SHA<span>YAN</span></a>
+                <p>Shayan Jawed — WordPress &amp; Frontend Developer, Karachi, Pakistan.</p>
             </div>
 
-        </div>
-
-    </section>
-
-
-
-
-    <!-- ================= FEATURES ================= -->
-
-    <section class="project-section">
-
-        <div class="container">
-
-            <h2>
-
-                Key Features
-
-            </h2>
-
-            <div class="feature-grid">
-
-                <div>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    Appointment Booking
-
-                </div>
-
-                <div>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    Doctor Information
-
-                </div>
-
-                <div>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    Services Section
-
-                </div>
-
-                <div>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    Testimonials
-
-                </div>
-
-                <div>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    FAQ Section
-
-                </div>
-
-                <div>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    Google Map
-
-                </div>
-
-                <div>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    Contact Form
-
-                </div>
-
-                <div>
-
-                    <i class="fa-solid fa-check"></i>
-
-                    Mobile Responsive
-
-                </div>
-
+            <div class="footer-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
 
-        </div>
-
-    </section>
-
-
-
-
-
-    <!-- ================= GALLERY ================= -->
-
-    <section class="project-section">
-
-        <div class="container">
-
-            <h2>
-
-                Project Gallery
-
-            </h2>
-
-            <div class="gallery">
-
-                <img src="../images/clinic-hero.png" alt="Hero">
-
-                <img src="../images/about.png" alt="About">
-
-                <img src="../images/services.png" alt="Services">
-
-                <img src="../images/doctors.png" alt="Doctors">
-
-                <img src="../images/appointment.png" alt="Appointment">
-
-                <img src="../images/contact.png" alt="Contact">
-
+            <div class="footer-social">
+                <h5>Social Links</h5>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shayan-jawed-3a9671381/" target="_blank"
+                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ShayanJawed132/student-shayan" target="_blank" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/shayan.jawed.940" target="_blank" aria-label="Facebook"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/shayooonnnieee/" target="_blank" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
-
         </div>
 
-    </section>
-
-
-
-
-    <!-- ================= FOOTER BUTTON ================= -->
-
-    <section class="project-footer">
-
-        <div class="container">
-
-            <a href="../index.html#Portfolio" class="project-btn">
-
-                ← Back To Portfolio
-
-            </a>
-
+        <div class="footer-bottom">
+            <p>© 2026 Shayan Jawed. All Rights Reserved.</p>
         </div>
+    </footer>
 
-    </section>
+    <button class="to-top" id="toTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

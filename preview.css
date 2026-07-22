@@ -1,0 +1,103 @@
+/* =============================================================
+   PROJECT PREVIEW PAGE
+   Reuses color tokens from style.css. Keep this file loaded
+   AFTER style.css so these rules take effect.
+   ============================================================= */
+
+.preview-body {
+  background: var(--bg);
+}
+
+.preview-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+}
+.preview-bar-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.preview-title {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.preview-main {
+  padding: 60px 0 90px;
+}
+.preview-heading {
+  font-size: clamp(26px, 4vw, 36px);
+  margin-bottom: 10px;
+}
+.preview-sub {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+
+.preview-frame {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+.preview-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+.preview-frame iframe {
+  width: 100%;
+  height: 70vh;
+  min-height: 420px;
+  border: 0;
+  border-radius: var(--radius);
+  background: #fff;
+  display: block;
+}
+.coming-soon {
+  padding: 90px 20px;
+  text-align: center;
+  color: var(--text-muted);
+}
+.coming-soon i {
+  font-size: 34px;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: block;
+}
+.coming-soon p {
+  font-size: 15px;
+}
+
+.preview-actions {
+  margin-top: 34px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .preview-bar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

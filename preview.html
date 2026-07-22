@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Preview — Shayan Jawed</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="preview.css" />
+</head>
+
+<body class="preview-body">
+
+    <!-- ===================== TOP BAR ===================== -->
+    <header class="preview-bar">
+        <div class="container preview-bar-inner">
+            <a href="index.html#projects" class="btn btn-outline btn-sm back-btn">
+                <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+            </a>
+            <span class="preview-title" id="previewTitle">Project Preview</span>
+        </div>
+    </header>
+
+    <!-- ===================== PREVIEW CONTENT ===================== -->
+    <main class="preview-main">
+        <div class="container">
+            <h1 class="preview-heading" id="previewHeading">Project Preview</h1>
+            <p class="preview-sub" id="previewSub">A closer look at this project.</p>
+
+            <div class="preview-frame" id="previewFrame">
+                <!-- filled dynamically: image, iframe, or coming-soon message -->
+            </div>
+
+            <div class="preview-actions">
+                <a href="index.html#projects" class="btn btn-primary">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+                </a>
+                <a href="#" id="openLiveBtn" target="_blank" class="btn btn-outline" style="display:none;">
+                    Open Full Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const img = params.get('img');
+        const live = params.get('live');
+        const title = params.get('title') || 'Project Preview';
+        const frame = document.getElementById('previewFrame');
+        const openLiveBtn = document.getElementById('openLiveBtn');
+
+        document.getElementById('previewTitle').textContent = title;
+        document.getElementById('previewHeading').textContent = title;
+        document.title = title + ' — Shayan Jawed';
+
+        if (live) {
+            document.getElementById('previewSub').textContent = 'Live preview — embedded below. Use "Open Full Site" for the complete experience.';
+            frame.innerHTML = `<iframe src="${live}" title="${title} live preview" loading="lazy"></iframe>`;
+            openLiveBtn.href = live;
+            openLiveBtn.style.display = 'inline-flex';
+        } else if (img) {
+            frame.innerHTML = `<img src="${img}" alt="${title} screenshot" />`;
+        } else {
+            frame.innerHTML = `
+                <div class="coming-soon">
+                    <i class="fa-solid fa-hourglass-half"></i>
+                    <p>Live preview coming soon for this project.</p>
+                </div>`;
+        }
+    </script>
+
+</body>
+
+</html>
